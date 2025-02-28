@@ -4,8 +4,9 @@ RUN apt-get -y update -y && \
     apt-get -y upgrade -y && \
     apt-get install git -y && \
     apt-get install wget -y && \
-    wget https://faraway6834.github.io/py37env_home/initial_setter && \
-    ./initial_setter
+    wget https://faraway6834.github.io/py37env_home/initial_setter -O /initial_setter && \
+    chmod u+x initial_setter && \
+    /initial_setter
 
 WORKDIR /home/py37/py37env_home
 
